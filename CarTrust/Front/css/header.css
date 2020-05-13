@@ -1,0 +1,57 @@
+﻿.header-table {
+    width: 100%;
+    background-color: #f9fafb;
+    font-size: 1.2em;
+}
+    .header-table .slogan {
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #b70d38;
+    }
+    .header-table a:link {
+        color: black;
+        font-size: 1.0em;
+        font-weight: bold;
+    }
+
+    .header-table a i {
+        color: #b70d38;
+    }
+
+
+
+.header-menu {
+    width: 100%;
+    background-color: #202c45;
+    min-height: 40px;
+    margin: 0;
+    border-bottom: 2px solid #f2184f;
+}
+
+    .header-menu td {
+        color: white;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: center;
+            padding: 15px;
+    }
+
+    .header-menu td.selected {
+        padding-top: 9px;
+    }
+
+    .header-menu a:visited, a:link {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width:100%
+    }
+
+
+    .header-menu .active-bg {
+        background-color: #f2184f;
+    }
+
+body {
+    margin: 0
+}

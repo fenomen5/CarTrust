@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admins.master.cs" Inherits="CarTrust.Admins" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>CarTrust admin panel </title>
+    <link rel="stylesheet" href="Front/css/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Front/css/header.css">
+    <link rel="stylesheet" href="Front/css/footer.css">
+    <link rel="stylesheet" href="Front/css/main.css">
+    <script src="Front/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="Front/js/main.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <table class="header-table">
+                <tr>
+                    <td width="15%">&nbsp;
+                    </td>
+                    <td width="200x">
+                        <img src="Front/img/cartrustlogo.png" />
+                    </td>
+                    <td width="10%"><h1>Admin panel</h1>
+                    </td>
+                   
+                    <td width="20%" class=">
+                        <div class="cart-brief"></div>
+                    </td>
+                </tr>
+            </table>
+            <table class="header-menu" cellpading="0" cellspacing="0">
+                <tr>
+                    <td width="20%">&nbsp;
+                    </td>
+                    <td id="admin_services">                        
+                        <a href="manage_services.aspx">Manage Services</a>
+                    </td>
+                    <td id="admin_services">                        
+                        <a href="manage_users.aspx">Manage Users</a>
+                    </td>
+                    <td id="admin_visits">
+                        <a href="/manage_visits.aspx">Manage Visits</a>
+                    </td>
+                    <td id="admin_visits">
+                        <a href="/manage_promos.aspx">Manage Promos</a>
+                    </td>
+                    <td id="admin_tosite">
+                        <a href="/mainpage.aspx">To Site</a>
+                    </td>
+                    <td width="20%">&nbsp;
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <div style="padding:20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="text-center link-simple">
+                        <a href="mainpage.aspx"><h3 class="link-simple">To Site</h3></a>
+                </div>
+                <div class="text-center"><img src="Front/img/cartrustlogoinv.png" /></div>
+                <div class="text-center">
+                    <h3>Copyright@ Student 09195880 Aleksandr Barkov 2019 </h3>
+                </div>
+
+
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

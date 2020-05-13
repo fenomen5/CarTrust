@@ -1,0 +1,356 @@
+﻿body {
+
+}
+.font-16 {
+    font-size: 1.6em;
+}
+
+.text-center {
+    text-align:center;
+}
+.text-justify {
+    text-align:justify;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.link-simple, .link-simple:visited, a.link-simple, a.link-simple:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.pb-10 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pb-30 {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.form-input {
+    font-size:large;
+    padding: 8px 5px 8px 5px;
+}
+
+.input-long {
+    width: 400px;
+}
+
+.header-menu td.selected {
+    border-top: #E91E63 6px solid;
+}
+
+td.item-border-left {
+    border-left: 4px solid #f2184f;
+}
+
+.main-banner-three-btn {
+    margin: 30px 15% 20px 15%;
+    width: 70%;
+    min-height: 80px;
+}
+
+    .main-banner-three-btn td {
+        padding: 40px;
+        background-color: #202c45;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center
+    }
+
+.custom-services-table {
+    width: 80%;
+    margin: 20px 15% 20px 15%;
+    vertical-align: top;
+}
+
+.custom-services-grid {
+    width:100%
+        
+}
+
+.custom-services-grid {
+    width: 100%!important; 
+    color: White;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 24px;
+    line-height: 44px;
+    text-align: left;
+    margin-bottom:40px;
+}
+
+.custom-services-grid th{
+    border-left: 4px solid #f2184f;
+}
+
+.services-table {
+    width:80%;
+    margin: 20px 15% 20px 15%;
+    vertical-align:top;  
+}
+
+.services-title {
+    border-left: 4px solid #f2184f;
+    background-color: #202c45;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.services-title-badge {
+    display:inline;
+    border-left: 4px solid #f2184f;
+    background-color: #202c45;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+}
+
+.services-description {
+    padding: 20px;
+    min-height:90px;
+    max-height:90px;
+    overflow:hidden;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 18px;
+}
+.services-price {
+    background-color: #f2184f;
+    font-size: 22px;
+    text-align:center;
+    color:black;
+    padding:10px;
+}
+.services-content {
+    background-color: #202c45;
+    padding: 10px;
+    min-height: 500px;
+    max-height: 500px;
+    overflow:hidden;
+    position:relative;
+}
+.services-content ul {
+    list-style: circle;
+    color: white;
+    margin:0;
+}
+.services-content ul li{
+    margin-top:15px;
+}
+
+.visit-form {
+    margin: 20px 8% 20px 8%;
+    padding:20px;
+}
+
+.service-table {
+    display:block;
+    margin-bottom:60px;
+}
+
+    .service-table td {
+        padding: 10px 10px 0 10px;
+        font-size: 1.4em;
+        font-family: sans-serif;
+    }
+
+        .service-table td.field {
+            font-weight: bold;
+            min-width:240px;
+        }
+
+        .service-table td.service-description {
+            font-size: 1.1em;
+        }
+        .service-table td.service-cart-btn{
+            font-size: 1.1em;
+            width:290px;
+        }
+.services-row {
+    cursor:pointer;
+}
+    .services-row:hover {
+        background-color: #da3760!important;
+        color: white !important;
+    }
+
+.cart-add-btn, .book-visit {
+    cursor: pointer;
+    background-color: #202c45;
+    padding: 12px;
+    border: 2px solid #f2184f;
+    font-size: 1.2em;
+    color: white;
+}
+
+.remove-service {
+    cursor: pointer;
+    background-color: #202c45;
+    padding: 8px;
+    border: 2px solid #f2184f;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 40%;
+    width: 30px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-brief {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/Front/img/cartsm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 20px;
+}
+.cart-brief-panel {
+    align-items:center;
+    cursor:pointer;
+}
+.cart-brief-panel h4 {
+    padding: 2px;
+    margin: 2px;
+}
+
+.cart-service-image {
+    width: 200px;
+    max-height:200px;
+}
+
+.cart-service-name {
+    font-size:x-large;
+}
+
+.cart-service-price {
+    font-size: x-large;
+    font-weight:bold;
+}
+
+.services-header {
+    font-size:x-large
+}
+
+.cartServicesGrid {
+    width: 80%;
+    margin: 20px auto;
+}
+
+    .cartServicesGrid tbody {
+        border: transparent;
+        border-bottom: 1px #f2184f;
+        text-align:center;
+    }
+
+.cart-services-total {
+    
+    text-align:center;
+}
+    .cart-services-total h2 {
+        margin-left:80px;
+        display:inline-block;
+    }
+
+.service-edit-table, .visit-edit-table {
+    font-size:large;
+    padding:10px 30px;
+}
+    .service-edit-table input[type=text], .service-edit-table select, .visit-edit-table input[type=text] {
+        font-size: large;
+        line-height: 30px;
+        padding: 8px;
+        min-width: 400px;
+    }
+
+    .service-edit-table textarea {
+        font-size: large;
+        line-height: 30px;
+        padding: 8px;
+        min-width: 700px;
+    }
+    .service-edit-table td, .visit-edit-table td{
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .service-edit-table input[type=submit], .visit-edit-table input[type=submit]{
+        font-size: large;
+        line-height: 30px;
+        padding: 8px;
+        min-width: 120px;
+    }
+    .btn-primary {
+        font-size: large;
+        line-height: 30px;
+        padding: 8px;
+        min-width: 120px;
+    }
+.mx-30 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mx-15 {
+    margin-left:15px;
+    margin-right:15px;
+}
+
+#gmap-wide {
+    width:100%;
+    height:400px;
+    margin-bottom:15px;
+}
+
+.promo-slider {
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 250px;
+}
+.promo-slider li img{
+    max-width: 500px;
+    max-height: 250px;
+}
+
+.login-table {
+    max-width:80%;
+    align-self:center;
+    margin:80px auto;
+    line-height:5px;
+}
+.login-table a {
+    color:black;
+}
+
+.btn {
+    font-size: large;
+    line-height: 30px;
+    padding: 8px;
+    min-width: 120px;
+    margin: 20px auto;
+    display:block;
+}

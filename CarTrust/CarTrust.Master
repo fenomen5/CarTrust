@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CarTrust.master.cs" Inherits="CarTrust.CarTrust" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="Front/css/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Front/css/vendor/slider/slider.css">
+    <link rel="stylesheet" href="Front/css/header.css">
+    <link rel="stylesheet" href="Front/css/footer.css">
+    <link rel="stylesheet" href="Front/css/main.css">
+    <script src="Front/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="Front/js/gmap.js"></script>
+    <script src="Front/js/main.js"></script>
+    <title>CarTrust site</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <table class="header-table">
+                <tr>
+                    <td width="5%">&nbsp;
+                    </td>
+                    <td width="200x">
+                        <img src="Front/img/cartrustlogo.png" />
+                    </td>
+                    <td width="520px" class="slogan">The service you can trust!
+                    </td>
+                    <td width="200px">
+                    </td>
+                    <td width="10%">
+                        <% =this.getLoginData()%>
+                    </td>
+                    <td width="10%">
+                        <% =this.getSignButton()%>
+                    </td>
+                    <td width="20%" class="cart-brief-panel">
+                        <div style="display:inline-block">
+                            <h4>Total Count:<asp:Label ID="cart_svc_num" runat="server" Text="0"></asp:Label></h4>
+                        <h4>Total Cost:<asp:Label ID="cart_svc_cost" runat="server" Text="0"></asp:Label></h4>
+                        </div>
+                        <div class="cart-brief"></div>
+                    </td>
+                </tr>
+            </table>
+            <table class="header-menu" cellpading="0" cellspacing="0">
+                <tr>
+                    <td width="20%">&nbsp;
+                    </td>
+                    <td id="main">                        
+                        <a href="/mainpage.aspx">Home</a>
+                    </td>
+                    <td id="services">
+                        <a href="/services.aspx">Services</a>
+                    </td>
+                    <td id="team">
+                        <a href="/team.aspx">Our Team</a>
+                    </td>
+                    <td id="contacts">
+                        <a href="/contacts.aspx">Contacts</a>
+                    </td>
+                    <td id="visit" class="active-bg">
+                        <a href="/visit.aspx">Book a visit</a>
+                    </td>
+                    <td width="20%"><% =this.getAdminLink()%>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-logo"><img src="Front/img/cartrustlogoinv.png" />
+                        <div class="footer-address"><i class="fa fa-address-card"></i>402 Great North Rd, Grey Lynn, Auckland 1021</div>
+                        <div class="footer-email"><i class="fa fa-envelope"></i>cartrust@gmail.com</div>
+                        <div class="footer-phone"><i class="fa fa-phone"></i>0402 142 14 16</div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3 class="footer-list-header">Services</h3>
+                        <ul>
+                            <li><a href="services.aspx">Pick a custom service</a></li>
+                            <li><a href="services.aspx">Select maintenance pakage</a></li>
+                            <li><a href="team.aspx">Our team</a></li>
+                            <li><a href="visit.aspx">Book a visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-hours">
+                        <h3 class="footer-list-header">Opening Hours</h3>
+                        <ul class="footer-opening-hours">
+                    <li>Mon - Tues :  6.00 am - 10.00 pm </li>
+                    <li>Wed - Thur : 8.00 am - 6.00 pm </li>
+                    <li>Fri  : 3.00 pm - 8.00 pm </li>
+                    <li>Sun  : Closed </li>
+                </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3 class="footer-list-header">Connect with us</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright">Copyright ©2019 Aleksandr Barkov (09195880). All Rights Reserved</div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

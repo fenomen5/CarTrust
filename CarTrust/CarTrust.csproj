@@ -1,0 +1,480 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1DD631C-3090-4AA8-A241-F5EEEE91DD27}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarTrust</RootNamespace>
+    <AssemblyName>CarTrust</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="edit_user.aspx" />
+    <Content Include="ErrorPages\error500.aspx" />
+    <Content Include="ErrorPages\error404.aspx" />
+    <Content Include="ErrorPages\error403.aspx" />
+    <Content Include="ErrorPages\error401.aspx" />
+    <Content Include="Front\css\footer.css" />
+    <Content Include="Front\css\main.css" />
+    <Content Include="Front\css\vendor\fontawesome\css\font-awesome.css" />
+    <Content Include="Front\css\vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Front\css\vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Front\css\vendor\slider\slider.css" />
+    <Content Include="Front\img\cartrustlogo.png" />
+    <Content Include="Front\css\header.css" />
+    <Content Include="Front\img\cartrustlogoinv.png" />
+    <Content Include="Front\img\mainpageback.png" />
+    <Content Include="Front\img\service_detail\abs-wheel-speed-sensor.jpg" />
+    <Content Include="Front\img\service_detail\ac-compressor-repl.jpg" />
+    <Content Include="Front\img\service_detail\air-conditioner-replacement.jpg" />
+    <Content Include="Front\img\service_detail\alternator-repl.jpg" />
+    <Content Include="Front\img\service_detail\battery-cable-replacement.jpg" />
+    <Content Include="Front\img\service_detail\battery-repl.jpg" />
+    <Content Include="Front\img\service_detail\blower-motor-replacement.jpg" />
+    <Content Include="Front\img\service_detail\brake-caliper-replacement.jpg" />
+    <Content Include="Front\img\service_detail\brake-drum-replacement.jpg" />
+    <Content Include="Front\img\service_detail\brake-hose-replacement.jpg" />
+    <Content Include="Front\img\service_detail\brake-light-bulb-replacement.jpg" />
+    <Content Include="Front\img\service_detail\brake-system-flush.jpg" />
+    <Content Include="Front\img\service_detail\car-aircon-condenser.jpg" />
+    <Content Include="Front\img\service_detail\clutch-cable-adjustment.jpg" />
+    <Content Include="Front\img\service_detail\clutch-cable-replacement.jpg" />
+    <Content Include="Front\img\service_detail\clutch-fluid-replacement.jpg" />
+    <Content Include="Front\img\service_detail\clutch-master-cylinder.jpg" />
+    <Content Include="Front\img\service_detail\clutch-repl.jpg" />
+    <Content Include="Front\img\service_detail\coolant-level-sensor-replacement.jpg" />
+    <Content Include="Front\img\service_detail\coolant-reservoir-repl.jpg" />
+    <Content Include="Front\img\service_detail\cooling-system-flush.jpg" />
+    <Content Include="Front\img\service_detail\cv-boot-replacement.jpg" />
+    <Content Include="Front\img\service_detail\cv-shaft-replacement.jpg" />
+    <Content Include="Front\img\service_detail\differential-pinion-seal-replacement.jpg" />
+    <Content Include="Front\img\service_detail\driveshaft-replacement.jpg" />
+    <Content Include="Front\img\service_detail\front-brake-part-repl.JPG" />
+    <Content Include="Front\img\service_detail\front-shock-absorber-repl.jpg" />
+    <Content Include="Front\img\service_detail\fuse-replacement.jpg" />
+    <Content Include="Front\img\service_detail\headlight-bulb.jpg" />
+    <Content Include="Front\img\service_detail\high-pressure-hose-replacement.jpg" />
+    <Content Include="Front\img\service_detail\horn-replacement.jpg" />
+    <Content Include="Front\img\service_detail\ignition-coil-repl.jpg" />
+    <Content Include="Front\img\service_detail\image_ac-regas.jpg" />
+    <Content Include="Front\img\service_detail\manual-selector-cable-replacement.jpg" />
+    <Content Include="Front\img\service_detail\power-mirror-switch-replacement.jpg" />
+    <Content Include="Front\img\service_detail\power-steering-fluid.jpg" />
+    <Content Include="Front\img\service_detail\power-steering-rack-repl.jpg" />
+    <Content Include="Front\img\service_detail\power-steering-replacement.jpg" />
+    <Content Include="Front\img\service_detail\radiator-replacement.jpg" />
+    <Content Include="Front\img\service_detail\rear-brake-pad-rotor-repl.jpg" />
+    <Content Include="Front\img\service_detail\rear-brake-part-repls.jpg" />
+    <Content Include="Front\img\service_detail\rear-window-replacement.jpg" />
+    <Content Include="Front\img\service_detail\shift-lock-solenoid-repl.jpg" />
+    <Content Include="Front\img\service_detail\side-window-replacement.jpg" />
+    <Content Include="Front\img\service_detail\spark-plugs-cable-repl.jpg" />
+    <Content Include="Front\img\service_detail\starter-motor-repl.jpg" />
+    <Content Include="Front\img\service_detail\steering-column-replacement.jpg" />
+    <Content Include="Front\img\service_detail\suspension-bush.jpg" />
+    <Content Include="Front\img\service_detail\switch-replacement.jpg" />
+    <Content Include="Front\img\service_detail\thermostat-replacement.jpg" />
+    <Content Include="Front\img\service_detail\throttle-position-sensor-replacement.jpg" />
+    <Content Include="Front\img\service_detail\transfer-fluid-replacement.jpg" />
+    <Content Include="Front\img\service_detail\transmission-mount-replacement.jpg" />
+    <Content Include="Front\img\service_detail\water-pump-repl.jpg" />
+    <Content Include="Front\img\service_detail\wheel-bearings.jpg" />
+    <Content Include="Front\img\service_detail\windscreen-chip-repair.jpg" />
+    <Content Include="Front\img\service_detail\windscreen-replacement.jpg" />
+    <Content Include="Front\img\service_icons\abs-wheel-speed-sensor.jpg" />
+    <Content Include="Front\img\service_icons\ac-compressor-repl.jpg" />
+    <Content Include="Front\img\service_icons\air-conditioner-replacement.jpg" />
+    <Content Include="Front\img\service_icons\alternator-repl.jpg" />
+    <Content Include="Front\img\service_icons\battery-cable-replacement.jpg" />
+    <Content Include="Front\img\service_icons\battery-repl.jpg" />
+    <Content Include="Front\img\service_icons\blower-motor-replacement.jpg" />
+    <Content Include="Front\img\service_icons\brake-caliper-replacement.jpg" />
+    <Content Include="Front\img\service_icons\brake-drum-replacement.jpg" />
+    <Content Include="Front\img\service_icons\brake-hose-replacement.jpg" />
+    <Content Include="Front\img\service_icons\brake-light-bulb-replacement.jpg" />
+    <Content Include="Front\img\service_icons\brake-system-flush.jpg" />
+    <Content Include="Front\img\service_icons\car-aircon-condenser.jpg" />
+    <Content Include="Front\img\service_icons\clutch-cable-adjustment.jpg" />
+    <Content Include="Front\img\service_icons\clutch-cable-replacement.jpg" />
+    <Content Include="Front\img\service_icons\clutch-fluid-replacement.jpg" />
+    <Content Include="Front\img\service_icons\clutch-master-cylinder.jpg" />
+    <Content Include="Front\img\service_icons\clutch-repl.jpg" />
+    <Content Include="Front\img\service_icons\coolant-level-sensor-replacement.jpg" />
+    <Content Include="Front\img\service_icons\coolant-reservoir-repl.jpg" />
+    <Content Include="Front\img\service_icons\cooling-system-flush.jpg" />
+    <Content Include="Front\img\service_icons\cv-boot-replacement.jpg" />
+    <Content Include="Front\img\service_icons\cv-shaft-replacement.jpg" />
+    <Content Include="Front\img\service_icons\differential-pinion-seal-replacement.jpg" />
+    <Content Include="Front\img\service_icons\driveshaft-replacement.jpg" />
+    <Content Include="Front\img\service_icons\front-brake-part-repl.JPG" />
+    <Content Include="Front\img\service_icons\front-shock-absorber-repl.jpg" />
+    <Content Include="Front\img\service_icons\fuse-replacement.jpg" />
+    <Content Include="Front\img\service_icons\headlight-bulb.jpg" />
+    <Content Include="Front\img\service_icons\high-pressure-hose-replacement.jpg" />
+    <Content Include="Front\img\service_icons\horn-replacement.jpg" />
+    <Content Include="Front\img\service_icons\ignition-coil-repl.jpg" />
+    <Content Include="Front\img\service_icons\image_ac-regas.jpg" />
+    <Content Include="Front\img\service_icons\manual-selector-cable-replacement.jpg" />
+    <Content Include="Front\img\service_icons\power-mirror-switch-replacement.jpg" />
+    <Content Include="Front\img\service_icons\power-steering-fluid.jpg" />
+    <Content Include="Front\img\service_icons\power-steering-rack-repl.jpg" />
+    <Content Include="Front\img\service_icons\power-steering-replacement.jpg" />
+    <Content Include="Front\img\service_icons\radiator-replacement.jpg" />
+    <Content Include="Front\img\service_icons\rear-brake-pad-rotor-repl.jpg" />
+    <Content Include="Front\img\service_icons\rear-brake-part-repls.jpg" />
+    <Content Include="Front\img\service_icons\rear-window-replacement.jpg" />
+    <Content Include="Front\img\service_icons\shift-lock-solenoid-repl.jpg" />
+    <Content Include="Front\img\service_icons\side-window-replacement.jpg" />
+    <Content Include="Front\img\service_icons\spark-plugs-cable-repl.jpg" />
+    <Content Include="Front\img\service_icons\starter-motor-repl.jpg" />
+    <Content Include="Front\img\service_icons\steering-column-replacement.jpg" />
+    <Content Include="Front\img\service_icons\suspension-bush.jpg" />
+    <Content Include="Front\img\service_icons\switch-replacement.jpg" />
+    <Content Include="Front\img\service_icons\thermostat-replacement.jpg" />
+    <Content Include="Front\img\service_icons\throttle-position-sensor-replacement.jpg" />
+    <Content Include="Front\img\service_icons\transfer-fluid-replacement.jpg" />
+    <Content Include="Front\img\service_icons\transmission-mount-replacement.jpg" />
+    <Content Include="Front\img\service_icons\water-pump-repl.jpg" />
+    <Content Include="Front\img\service_icons\wheel-bearings.jpg" />
+    <Content Include="Front\img\service_icons\windscreen-chip-repair.jpg" />
+    <Content Include="Front\img\service_icons\windscreen-replacement.jpg" />
+    <Content Include="Front\img\staff\accountant.jpg" />
+    <Content Include="Front\img\staff\manager.jpg" />
+    <Content Include="Front\img\staff\mecanic 1.jpg" />
+    <Content Include="Front\img\staff\mecanic 2.jpg" />
+    <Content Include="Front\js\libs\slider.js" />
+    <Content Include="Front\js\libs\jquery-3.4.1.min.js" />
+    <Content Include="Front\js\gmap.js" />
+    <Content Include="Front\js\main.js" />
+    <Content Include="mainpage.aspx" />
+    <Content Include="manage_users.aspx" />
+    <Content Include="contacts.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="services.aspx" />
+    <Content Include="team.aspx" />
+    <Content Include="visit.aspx" />
+    <Content Include="service.aspx" />
+    <Content Include="cart.aspx" />
+    <Content Include="visit_success.aspx" />
+    <Content Include="manage_services.aspx" />
+    <Content Include="edit_service.aspx" />
+    <Content Include="manage_visits.aspx" />
+    <Content Include="edit_visit.aspx" />
+    <Content Include="manage_promos.aspx" />
+    <Content Include="edit_promo.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="forgot_password.aspx" />
+    <Content Include="logout.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admins.Master.cs">
+      <DependentUpon>Admins.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins.Master.designer.cs">
+      <DependentUpon>Admins.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AuthUser.cs" />
+    <Compile Include="Cart.cs" />
+    <Compile Include="CarTrust.Master.cs">
+      <DependentUpon>CarTrust.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarTrust.Master.designer.cs">
+      <DependentUpon>CarTrust.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="edit_user.aspx.cs">
+      <DependentUpon>edit_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit_user.aspx.designer.cs">
+      <DependentUpon>edit_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\error500.aspx.cs">
+      <DependentUpon>error500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\error500.aspx.designer.cs">
+      <DependentUpon>error500.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\error404.aspx.cs">
+      <DependentUpon>error404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\error404.aspx.designer.cs">
+      <DependentUpon>error404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\error403.aspx.cs">
+      <DependentUpon>error403.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\error403.aspx.designer.cs">
+      <DependentUpon>error403.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\error401.aspx.cs">
+      <DependentUpon>error401.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\error401.aspx.designer.cs">
+      <DependentUpon>error401.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hash.cs" />
+    <Compile Include="Mailer.cs" />
+    <Compile Include="mainpage.aspx.cs">
+      <DependentUpon>mainpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainpage.aspx.designer.cs">
+      <DependentUpon>mainpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage_users.aspx.cs">
+      <DependentUpon>manage_users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage_users.aspx.designer.cs">
+      <DependentUpon>manage_users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="team.aspx.cs">
+      <DependentUpon>team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="team.aspx.designer.cs">
+      <DependentUpon>team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visit.aspx.cs">
+      <DependentUpon>visit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visit.aspx.designer.cs">
+      <DependentUpon>visit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="service.aspx.cs">
+      <DependentUpon>service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="service.aspx.designer.cs">
+      <DependentUpon>service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visit_success.aspx.cs">
+      <DependentUpon>visit_success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visit_success.aspx.designer.cs">
+      <DependentUpon>visit_success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage_services.aspx.cs">
+      <DependentUpon>manage_services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage_services.aspx.designer.cs">
+      <DependentUpon>manage_services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit_service.aspx.cs">
+      <DependentUpon>edit_service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit_service.aspx.designer.cs">
+      <DependentUpon>edit_service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage_visits.aspx.cs">
+      <DependentUpon>manage_visits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage_visits.aspx.designer.cs">
+      <DependentUpon>manage_visits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit_visit.aspx.cs">
+      <DependentUpon>edit_visit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit_visit.aspx.designer.cs">
+      <DependentUpon>edit_visit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage_promos.aspx.cs">
+      <DependentUpon>manage_promos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage_promos.aspx.designer.cs">
+      <DependentUpon>manage_promos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit_promo.aspx.cs">
+      <DependentUpon>edit_promo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit_promo.aspx.designer.cs">
+      <DependentUpon>edit_promo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgot_password.aspx.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgot_password.aspx.designer.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CarTrust.Master" />
+    <Content Include="Front\css\vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Front\css\vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Front\css\vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Front\css\vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Front\css\vendor\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Admins.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Front\img\promo_detail\" />
+    <Folder Include="Front\img\service\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59721</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59721/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

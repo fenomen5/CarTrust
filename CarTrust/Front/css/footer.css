@@ -1,0 +1,124 @@
+﻿body {
+}
+
+.footer {
+    padding: 40px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.footer-list-header {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+    .footer-list-header::after {
+        bottom: -8px;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: relative;
+        width: 50px;
+        background: #F2184F;
+        display: block;
+    }
+
+.footer-opening-hours {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    list-style-type: none;
+    margin: 0 20% 0 20%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 30% auto 30%;
+    grid-template-rows: 40% 20%px auto;
+    grid-template-areas: "logo links . hours" "main main . sidebar" "copyright social social social";
+    grid-column-gap: 20px;
+}
+
+.footer-logo {
+    grid-area: logo;
+    font-family: 'Open Sans', sans-serif;
+}
+
+    .footer-logo .footer-address, .footer-logo .footer-email, .footer-logo .footer-phone{
+        padding: 20px 15px 0px 0;
+        font-size: 1.4em;
+    }
+
+    .footer-logo i {
+        color: #F2184F;
+        margin-right: 15px;
+    }
+
+.footer-links {
+    grid-area: links;
+    padding-top:25px;
+}
+
+    .footer-links a {
+        color: gray;
+    }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+    .footer-links ul {
+        list-style: none;
+        margin: 25px 0 0 0;
+        padding: 0;
+        font-size: 1.4em;
+        line-height: 2.2em;
+        color: #b1b1b1;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer-links li {
+        border-bottom: 1px gray dashed;
+    }
+
+.footer-hours {
+    grid-area: hours;
+    padding-top: 25px;
+}
+
+    .footer-hours ul {
+        list-style: none;
+        margin: 25px 0 0 0;
+        padding: 0;
+        font-size: 1.4em;
+        line-height: 2.2em;
+        color: #b1b1b1;
+    }
+
+    .footer-hours li {
+        border-bottom: 1px gray dashed;
+    }
+
+.footer-social {
+    grid-area: social;
+    margin-top: 50px;
+    border-bottom: 1px dashed gray;
+}
+    .footer-social ul {
+        list-style: none;
+        font-size: 2em;
+        padding: 0;
+    }
+    .footer-social li {
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+.footer-copyright {
+    grid-area: copyright;
+    align-self: end;
+    font-size:0.8em;
+    color:gray;
+}
