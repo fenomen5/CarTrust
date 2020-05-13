@@ -52,3 +52,5 @@ MSSQL
 ### Contacts page
 ![](Media/Screenshots/contact.png)
 
+### Legal Disclaimer
+All rights reserved All used images are the property of their respective owners.
